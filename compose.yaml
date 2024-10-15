@@ -289,5 +289,5 @@ volumes:
 networks:
   server:
     driver: bridge
-    name: db_n_cache
+    name: ${SERVICE_NETWORK}
     external: true
