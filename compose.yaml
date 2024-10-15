@@ -222,6 +222,11 @@ services:
       - ELASTIC_USER=elastic
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - ELASTIC_HOSTS=https://elasticsearch:9200
+      - JDBC_DRIVER_LIBRARY=/usr/share/logstash/postgresql.jar
+      - JDBC_DRIVER_CLASS=org.postgresql.Driver
+      - JDBC_CONNECTION_STRING=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+      - JDBC_USER=${DB_USER}
+      - JDBC_PASSWORD=${DB_PASSWORD}
 
   # fleet-server:
   #   depends_on:
