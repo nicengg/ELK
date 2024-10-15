@@ -1,4 +1,4 @@
 - pipeline.id: file-pipeline
   path.config: "pipeline/file"
-- pipeline.id: idnl-postgres-pipeline
-  path.config: "pipeline/idnl"
+- pipeline.id: "postgres-pipeline"
+  path.config: "pipeline/postgres"
